@@ -12,7 +12,7 @@ const Banner = () => {
                     </div>
                     <div className="col-lg-8 align-self-baseline">
                         <p className="text-white-75 mb-5">Hola! Mi nombre es Hugo Tatarinoff y soy Desarrollador full Stack, me considero una persona sencilla, eso si inovadora y creativa, apasionado por la Programación y Nuevas Técnologias</p>
-                        <a className="btn btn-primary btn-xl" href="#about">Saber Más</a>
+                        <a className="btn btn-primary btn-lg p-3" href="#about">Saber Más</a>
                     </div>
                 </div>
             </div>
