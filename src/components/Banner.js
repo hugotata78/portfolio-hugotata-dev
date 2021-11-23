@@ -1,7 +1,9 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 
 const Banner = () => {
+
     return (
         <header className="masthead">
             <div className="container px-4 px-lg-5 h-100">

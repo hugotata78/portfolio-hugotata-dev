@@ -1,3 +1,5 @@
+import { faMobile, faMobileAlt, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 
 const Contact = () => {
@@ -45,9 +47,6 @@ const Contact = () => {
                             <div className="d-none" id="submitSuccessMessage">
                                 <div className="text-center mb-3">
                                     <div className="fw-bolder">Envío de formulario exitoso!</div>
-                                    Para activar este formulario, regístrese en
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                                 </div>
                             </div>
                             
@@ -59,7 +58,7 @@ const Contact = () => {
                 </div>
                 <div className="row gx-4 gx-lg-5 justify-content-center">
                     <div className="col-lg-4 text-center mb-5 mb-lg-0">
-                        <i className="bi-phone fs-2 mb-3 text-muted"></i>
+                        <span className=" fs-2 mb-3 text-muted"><FontAwesomeIcon icon={faMobileAlt} /></span>
                         <div>+549 (3755) 694161</div>
                     </div>
                 </div>

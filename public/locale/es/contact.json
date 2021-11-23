@@ -1,0 +1,19 @@
+{
+    "title":"No dudes en contactarme!",
+    "paragraph":"¿Listo para comenzar tu próximo proyecto? Enviame un mensaje y me pondré en contacto contigo lo antes posible.",
+    "fullName":"Nombre Completo",
+    "placeholderName":"Ingrese su nombre...",
+    "requiredName":"Se requiere un nombre.",
+    "email":"Dirección de Correo",
+    "placeholderEmail":"nombre@ejemplo.com",
+    "requiredEmail":"Se requier un Correo.",
+    "invalidEmail":"El correo no es válido.",
+    "phoneNumber":"Numero de Teléfono",
+    "requiredNumber":"Se requier un número de teléfono",
+    "message":"Mensaje",
+    "placeholderMessage":"Ingrese aquí su mensaje...",
+    "requiredMessage":"Se requiero un mensaje.",
+    "submitSuccessMessage":"¡Envío de formulario exitoso! En breve nos comunicaremos con Usted.",
+    "submitErrorMessage":"¡Error al enviar el mensaje!",
+    "submit":"Enviar"
+}

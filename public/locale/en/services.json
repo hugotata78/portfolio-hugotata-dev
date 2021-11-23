@@ -1,0 +1,9 @@
+{
+    "title": "My services",
+    "fontend-title": "Front-End Developer",
+    "frontend-description": "Client-side website and application development",
+    "backend-title": "Back-End Developer",
+    "backend-description": "Development of server-side applications, as well as configuration and connection to databases.",
+    "responsive-title": "Responsive design",
+    "responsive-description": "Creation of applications adaptable to any type of device!"
+}

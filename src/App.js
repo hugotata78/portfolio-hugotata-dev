@@ -1,10 +1,15 @@
 
 import { Home } from './pages/Home';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.js'
+import '@popperjs/core'
+import { Suspense } from 'react';
 
 function App() {
   return (
-    <Home />
+    <Suspense fallback='Cargando Traducciones ....'>
+      <Home />
+    </Suspense>
   );
 }
 

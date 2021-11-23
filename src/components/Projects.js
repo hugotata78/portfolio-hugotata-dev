@@ -23,7 +23,7 @@ const Projects = () => {
                         <a className="portfolio-box" href="https://covid19-application.surge.sh/" target='_blank' title="Project Name">
                             <img className="card-img-top class-img" src={covid} alt="covid" />
                             <div className="portfolio-box-caption">
-                                <div className="project-category text-white-50">App Covid-19</div>
+                                <div className="project-category text-white-50">Aplicación Covid-19</div>
                                 <div className="project-name">Ver aplicación</div>
                             </div>
                         </a>
@@ -32,7 +32,7 @@ const Projects = () => {
                         <a className="portfolio-box" href="https://free-weather-report.surge.sh/" target='_blank' title="Project Name">
                             <img className="card-img-top class-img" src={weather} alt="weather" />
                             <div className="portfolio-box-caption">
-                                <div className="project-category text-white-50">App del clima</div>
+                                <div className="project-category text-white-50">Aplicación del clima</div>
                                 <div className="project-name">Ver aplicación</div>
                             </div>
                         </a>
