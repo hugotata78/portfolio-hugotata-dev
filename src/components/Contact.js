@@ -1,9 +1,49 @@
-import { faMobile, faMobileAlt, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faMobile, faMobileAlt } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React from 'react'
+import React, { useState } from 'react'
+import emailjs from 'emailjs-com'
+require('dotenv').config()
 
 const Contact = () => {
 
+    const [name,setName] = useState('')
+    const [mail,setMail] = useState('')
+    const [phone,setPhone] = useState('')
+    const [message,setMessage] = useState('')
+    const data ={name,mail,phone,message}
+    const service_id = 'service_p9p1kt4'
+    const user_id ='user_uh0khwo3xqSadotU9Xlag'
+    const template_id = 'template_6fcoelj'
+
+    const handleChangeName = (e)=>{
+        setName(e.target.value)
+    }
+
+    const handleChangeMail = (e)=>{
+        setMail(e.target.value)
+    }
+
+    const handleChangePhone = (e)=>{
+        setPhone(e.target.value)
+    }
+
+    const handleChangeMessage = (e)=>{
+        setMessage(e.target.value)
+    }
+
+    
+    function sendEmail(e) {
+        e.preventDefault();
+    
+        emailjs.sendForm("service_p9p1kt4","template_i91cbxu", e.target,"user_uh0khwo3xqSadotU9Xlag")
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+          e.target.reset()
+      }
+    
     return (
         <section className="page-section" id="contact">
             <div className="container px-4 px-lg-5">
@@ -17,29 +57,29 @@ const Contact = () => {
                 <div className="row gx-4 gx-lg-5 justify-content-center mb-5">
                     <div className="col-lg-6">
                         
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <form id="contactForm" data-sb-form-api-token="API_TOKEN" onSubmit={sendEmail}>
                            
                             <div className="form-floating mb-3">
-                                <input className="form-control" id="name" type="text" placeholder="Ingrese su nombre..." data-sb-validations="required" />
+                                <input className="form-control" id="name" name="name" type="text" placeholder="Ingrese su nombre..." data-sb-validations="required" onChange={handleChangeName} />
                                 <label for="name">Nombre Completo</label>
                                 <div className="invalid-feedback" data-sb-feedback="name:required">Se requiere un nombre.</div>
                             </div>
                             
                             <div className="form-floating mb-3">
-                                <input className="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                <input className="form-control" id="email" name="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" onChange={handleChangeMail}/>
                                 <label for="email">Dirección de Email</label>
                                 <div className="invalid-feedback" data-sb-feedback="email:required">Se requier un Email.</div>
                                 <div className="invalid-feedback" data-sb-feedback="email:email">El Email no es válido.</div>
                             </div>
                             
                             <div className="form-floating mb-3">
-                                <input className="form-control" id="phone" type="tel" placeholder="(555) 555-555" data-sb-validations="required" />
+                                <input className="form-control" id="phone" name="phone" type="tel" placeholder="(555) 555-555" data-sb-validations="required" onChange={handleChangePhone}/>
                                 <label for="phone">Numero de Teléfono</label>
                                 <div className="invalid-feedback" data-sb-feedback="phone:required">Se requier un número de teléfono.</div>
                             </div>
                             
                             <div class="form-floating mb-3">
-                                <textarea className="form-control" id="message" type="text" placeholder="Ingrese aquí su mensaje..." style={{height: "10rem"}} data-sb-validations="required"></textarea>
+                                <textarea className="form-control" id="message" name="message" type="text" placeholder="Ingrese aquí su mensaje..." style={{height: "10rem"}} data-sb-validations="required" onChange={handleChangeMessage}></textarea>
                                 <label for="message">Mensaje</label>
                                 <div className="invalid-feedback" data-sb-feedback="message:required">Se requiero un mensaje.</div>
                             </div>
