@@ -1,16 +1,16 @@
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import logo from '../img/logo.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGlobe } from '@fortawesome/free-solid-svg-icons'
-import { useTranslation } from 'react-i18next'
+import { useTranslation } from "react-i18next";
 
 
 const NavBar = () => {
 
+    const { t, i18n } = useTranslation(['contact'])
     const [bgNavbar, setBgNavbar] = useState('')
-    const [t, i18n] = useTranslation(['navbar'])
-    const lang = i18n.language === 'es' ? t('spanish') : t('english')
-    console.log(i18n)
+    //const lang = i18n.language === 'es' ? t('spanish') : t('english')
+    console.log(t('title'))
 
     const handleOnClickEs = (e) => {
         e.preventDefault()
@@ -23,17 +23,17 @@ const NavBar = () => {
     }
 
 
-    const updateBgColor = () => {
+    const updateBgColor = useCallback(() => {
         if (window.scrollY > 50) {
             setBgNavbar('navbar-shrink')
         } else {
             setBgNavbar('')
         }
-    }
-
+    },[setBgNavbar]
+)
     useEffect(() => {
         window.addEventListener('scroll', updateBgColor)
-    }, [updateBgColor])
+    })
 
     return (
         <nav className={`navbar navbar-expand-lg navbar-light ${bgNavbar} fixed-top py-3`} id="mainNav">
@@ -46,17 +46,17 @@ const NavBar = () => {
                         <li className="nav-item"><a className="nav-link" href="#services">Servicios</a></li>
                         <li className="nav-item"><a className="nav-link" href="#portfolio">Proyectos</a></li>
                         <li className="nav-item"><a className="nav-link" href="#contact">Contacto</a></li>
-                        <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        {/* <li className="nav-item dropdown">
+                            <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <span><FontAwesomeIcon icon={faGlobe} /> </span>
                                 {lang}
                             </a>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a className="dropdown-item" href="#" onClick={handleOnClickEs}>{t('spanish')}</a></li>
+                                <li><a className="dropdown-item" href="/" onClick={handleOnClickEs}>{t('spanish')}</a></li>
                                 <li><hr className="dropdown-divider" /></li>
-                                <li><a className="dropdown-item" href="#" onClick={handleOnClickEn}>{t('english')}</a></li>
+                                <li><a className="dropdown-item" href="/" onClick={handleOnClickEn}>{t('english')}</a></li>
                             </ul>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
             </div>

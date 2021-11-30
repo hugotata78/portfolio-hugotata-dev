@@ -1,4 +1,4 @@
-import { faMobile, faMobileAlt } from '@fortawesome/free-solid-svg-icons'
+import { faMobileAlt } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useState } from 'react'
 import emailjs from 'emailjs-com'
@@ -10,10 +10,7 @@ const Contact = () => {
     const [mail,setMail] = useState('')
     const [phone,setPhone] = useState('')
     const [message,setMessage] = useState('')
-    const data ={name,mail,phone,message}
-    const service_id = 'service_p9p1kt4'
-    const user_id ='user_uh0khwo3xqSadotU9Xlag'
-    const template_id = 'template_6fcoelj'
+    
 
     const handleChangeName = (e)=>{
         setName(e.target.value)
