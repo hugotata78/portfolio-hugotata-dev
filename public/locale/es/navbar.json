@@ -1,8 +1,6 @@
 {
-    "about":"Acerca de Mi",
+    "about":"Acerca de mi",
     "services":"Servicios",
-    "portfolio":"Proyectos",
-    "contact":"Contacto",
-    "spanish":"Español",
-    "english":"Inglés"
+    "projects":"Proyectos",
+    "contact":"Contacto"
 }

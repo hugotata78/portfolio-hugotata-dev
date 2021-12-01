@@ -7,20 +7,20 @@ import { useTranslation } from "react-i18next";
 
 const NavBar = () => {
 
-    const { t, i18n } = useTranslation(['contact'])
+    const { t, i18n } = useTranslation(['navbar'])
     const [bgNavbar, setBgNavbar] = useState('')
     //const lang = i18n.language === 'es' ? t('spanish') : t('english')
-    console.log(t('title'))
+    //console.log(t('title'))
 
-    const handleOnClickEs = (e) => {
-        e.preventDefault()
-        i18n.changeLanguage('es')
-    }
+    // const handleOnClickEs = (e) => {
+    //     e.preventDefault()
+    //     i18n.changeLanguage('es')
+    // }
 
-    const handleOnClickEn = (e) => {
-        e.preventDefault()
-        i18n.changeLanguage('en')
-    }
+    // const handleOnClickEn = (e) => {
+    //     e.preventDefault()
+    //     i18n.changeLanguage('en')
+    // }
 
 
     const updateBgColor = useCallback(() => {
