@@ -1,5 +1,5 @@
 import React from 'react'
-import portfolio from '../img/portfolio.png'
+import portfolio from '../img/portfolio2.png'
 import store from '../img/store-app.png'
 import covid from '../img/covid.png'
 import weather from '../img/weather.png'
