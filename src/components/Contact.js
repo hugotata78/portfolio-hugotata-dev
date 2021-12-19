@@ -2,6 +2,7 @@ import { faMobileAlt } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useState } from 'react'
 import emailjs from 'emailjs-com'
+import Swal from 'sweetalert2' 
 require('dotenv').config()
 
 const Contact = () => {
@@ -60,10 +61,20 @@ const Contact = () => {
             emailjs.sendForm("service_p9p1kt4", "template_i91cbxu", e.target, "user_uh0khwo3xqSadotU9Xlag")
                 .then((result) => {
                     console.log(result.text);
-                    setEmailSuccess('d-block')
+                    // setEmailSuccess('d-block')
+                    Swal.fire(
+                        'Buen trabajo!',
+                        'El email se envió exitosamente!',
+                        'success'
+                      )
                 }, (error) => {
                     console.log(error.text);
-                    setEmailError('d-block')
+                    //setEmailError('d-block')
+                    Swal.fire(
+                        'Ups..!',
+                        'Parece que ha ocurrido un erro!',
+                        'error'
+                      )
                 });
             e.target.reset()
         }
