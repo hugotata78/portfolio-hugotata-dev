@@ -19,7 +19,7 @@ const Pdf = () => {
             >
                 <br />
                     <a href={pdf} id="enlaceDescargarPdf"
-                    download="ReactJS.pdf"
+                    download={pdf}
                     >No puedes visualizar el CV, da click aquí para descargarlo</a>
             </object>
         </div>
