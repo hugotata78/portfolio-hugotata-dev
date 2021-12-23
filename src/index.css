@@ -2207,6 +2207,16 @@ progress {
     background: #d95232;
   }
 
+  .span-cursor{
+    animation: machine 3s 1;
+    transition: all 3ms;
+  }
+
+  @keyframes machine {
+    0%{opacity: 0;}
+    50%{opacity: 0.5;}
+    100%{opacity: 1.0;}
+}
   .up{
     padding:20px;
 	  background:#024959;

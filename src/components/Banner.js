@@ -1,15 +1,25 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 
 
 const Banner = () => {
 
+    const [clsTitle,setClsTitle] = useState('d-none')
+    // const changeCls = ()=>{
+    //     setTimeout(()=>{
+    //         setClsTitle('d-blok')
+    //     },2000)
+    // }
+
+    // useEffect(()=>{
+    //     window.addEventListener('load',changeCls)
+    // })
     return (
         <header className="masthead">
             <div className="container px-4 px-lg-5 h-100">
                 <div className="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
                     <div className="col-lg-8 align-self-end">
-                        <h1 className="text-white font-weight-bold">Desarrollador Full Stack</h1>
+                        <h1 className="span-cursor text-white font-weight-bold">Desarrollador Full Stack. </h1>
                         <hr className="divider" />
                     </div>
                     <div className="col-lg-8 align-self-baseline">
