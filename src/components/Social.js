@@ -1,9 +1,4 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import facebook from '../img/facebook-f-brands.svg'
-import linkedin from '../img/linkedin-in-brands.svg'
-import github from '../img/github-brands.svg'
-import twitter from '../img/twitter-brands.svg'
-import whatsapp from '../img/whatsapp-brands.svg'
+
 import React from 'react'
 
 
@@ -13,11 +8,11 @@ export const Social = () => {
     return (
         <div className='social'>
             <ul>
-                <li><a className='facebook' href="https://www.facebook.com/hugohector.tatarinoff/" target='_blank'><i class="bi bi-facebook"></i></a></li>
-                <li><a className='linkedin' href="https://www.linkedin.com/in/hugo-tatarinoff-dev/" target='_blank'><i class="bi bi-linkedin"></i></a></li>
-                <li><a className='github' href="https://github.com/hugotata78" target='_blank'><i class="bi bi-github"></i></a></li>
-                <li><a className='twitter' href="https://twitter.com/TatarinoffHugo" target='_blank'><i class="bi bi-twitter"></i></a></li>
-                <li><a className='whatsapp' href={`https://api.whatsapp.com/send?phone=+543755694161&text=${msg}`} target='_blank'><i class="bi bi-whatsapp"></i></a></li>
+                <li><a className='facebook' href="https://www.facebook.com/hugohector.tatarinoff/" target='_blank' rel="noreferrer"><i className="bi bi-facebook"></i></a></li>
+                <li><a className='linkedin' href="https://www.linkedin.com/in/hugo-tatarinoff-dev/" target='_blank' rel="noreferrer"><i className="bi bi-linkedin"></i></a></li>
+                <li><a className='github' href="https://github.com/hugotata78" target='_blank' rel="noreferrer"><i className="bi bi-github" rel="noreferrer"></i></a></li>
+                <li><a className='twitter' href="https://twitter.com/TatarinoffHugo" target='_blank' rel="noreferrer"><i className="bi bi-twitter"></i></a></li>
+                <li><a className='whatsapp' href={`https://api.whatsapp.com/send?phone=+543755694161&text=${msg}`} target='_blank' rel="noreferrer"><i className="bi bi-whatsapp"></i></a></li>
             </ul>
         </div>
     )

@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import Abaut from '../components/Abaut'
 import Banner from '../components/Banner'
 import NavBar from '../components/NavBar'
@@ -9,6 +9,7 @@ import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 import { Social } from '../components/Social'
 //import { ButtonUp } from '../components/ButtonUp'
+import ScrollReveal from 'scrollreveal'
 
 export const Home = () => {
 
@@ -25,6 +26,14 @@ export const Home = () => {
     // useEffect(()=>{
     //     window.addEventListener('scroll',changeDisplayButton)
     // },[changeDisplayButton])
+
+    useEffect(() => {
+        ScrollReveal().reveal('.row', {
+            duration: 3000,
+            origin: 'top',
+            distance: '-100px'
+        })
+    })
     
     return (
         <div id='page-top'>

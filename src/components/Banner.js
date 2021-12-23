@@ -1,19 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 
 
 
 const Banner = () => {
 
-    const [clsTitle,setClsTitle] = useState('d-none')
-    // const changeCls = ()=>{
-    //     setTimeout(()=>{
-    //         setClsTitle('d-blok')
-    //     },2000)
-    // }
-
-    // useEffect(()=>{
-    //     window.addEventListener('load',changeCls)
-    // })
+    
     return (
         <header className="masthead">
             <div className="container px-4 px-lg-5 h-100">

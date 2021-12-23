@@ -15,7 +15,6 @@ const Contact = () => {
     })
     const [errorName,setErrorName] = useState('d-none')
     const [errorEmail,setErrorEmail] = useState('d-none')
-    const [invalidEmail,setInvalidEmail] = useState('d-none')
     const [errorPhone,setErrorPhone] = useState('d-none')
     const [errorMessage,setErrorMessage] = useState('d-none')
     const [emailSuccess,setEmailSuccess] = useState('d-none')
@@ -105,7 +104,7 @@ const Contact = () => {
                                 <input className="form-control" id="email" name="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" onChange={handleOnChange} />
                                 <label htmlFor="email">Dirección de Email</label>
                                 <div className={`${errorEmail} invalid-feedback`} data-sb-feedback="email:required">*Se requiere un Email.</div>
-                                <div className={invalidEmail} data-sb-feedback="email:email">El Email no es válido.</div>
+                                <div className='invalid-feedback' data-sb-feedback="email:email">El Email no es válido.</div>
                             </div>
 
                             <div className="form-floating mb-3">

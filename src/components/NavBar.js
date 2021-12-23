@@ -1,28 +1,12 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import logo from '../img/logo.svg'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGlobe } from '@fortawesome/free-solid-svg-icons'
-import { useTranslation } from "react-i18next";
+
 
 
 const NavBar = () => {
 
-    const { t, i18n } = useTranslation(['navbar'])
     const [bgNavbar, setBgNavbar] = useState('')
-    //const lang = i18n.language === 'es' ? t('spanish') : t('english')
-    //console.log(t('title'))
-
-    // const handleOnClickEs = (e) => {
-    //     e.preventDefault()
-    //     i18n.changeLanguage('es')
-    // }
-
-    // const handleOnClickEn = (e) => {
-    //     e.preventDefault()
-    //     i18n.changeLanguage('en')
-    // }
-
-
+    
     const updateBgColor = useCallback(() => {
         if (window.scrollY > 50) {
             setBgNavbar('navbar-shrink')
