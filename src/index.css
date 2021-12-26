@@ -2210,6 +2210,7 @@ progress {
   .span-cursor{
     animation: machine 3s 1;
     transition: all 3ms;
+
   }
 
   @keyframes machine {

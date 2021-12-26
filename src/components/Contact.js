@@ -1,8 +1,9 @@
 import { faMobileAlt } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import emailjs from 'emailjs-com'
-import Swal from 'sweetalert2' 
+import Swal from 'sweetalert2'
+import ScrollReveal from 'scrollreveal' 
 require('dotenv').config()
 
 const Contact = () => {
@@ -79,9 +80,16 @@ const Contact = () => {
         }
     }
 
+    useEffect(() => {
+        ScrollReveal().reveal('.contact', {
+            duration: 3000,
+            origin: 'top',
+            distance: '-100px'
+        })
+    }) 
     return (
         <section className="page-section" id="contact">
-            <div className="container px-4 px-lg-5">
+            <div className="container contact px-4 px-lg-5">
                 <div className="row gx-4 gx-lg-5 justify-content-center">
                     <div className="col-lg-8 col-xl-6 text-center">
                         <h2 className="mt-0">No dudes en contactarme!</h2>
@@ -89,7 +97,7 @@ const Contact = () => {
                         <p className="text-muted mb-5">¿Listo para comenzar tu próximo proyecto? Enviame un mensaje y me pondré en contacto contigo lo antes posible.</p>
                     </div>
                 </div>
-                <div className="row gx-4 gx-lg-5 justify-content-center mb-5">
+                <div className="contact row gx-4 gx-lg-5 justify-content-center mb-5">
                     <div className="col-lg-6">
 
                         <form id="contactForm" data-sb-form-api-token="API_TOKEN" onSubmit={sendEmail}>
