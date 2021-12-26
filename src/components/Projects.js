@@ -9,29 +9,29 @@ const Projects = () => {
 
     useEffect(() => {
         ScrollReveal().reveal('.project-1', {
-            duration:3000,
+            duration:2000,
             origin: 'top',
             distance: '-100px'
         })
         ScrollReveal().reveal('.project-2',{
-            duration:3000,
+            duration:2000,
             origin: 'top',
             distance: '-100px',
-            delay:3200
+            delay:2200
 
         })
         ScrollReveal().reveal('.project-3',{
-            duration:3000,
+            duration:2000,
             origin: 'top',
             distance: '-100px',
-            delay:3500
+            delay:2500
 
         })
         ScrollReveal().reveal('.project-4',{
             duration:3000,
             origin: 'top',
             distance: '-100px',
-            delay:3800
+            delay:2800
 
         })
     })

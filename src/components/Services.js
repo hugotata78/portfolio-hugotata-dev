@@ -8,22 +8,22 @@ const Services = () => {
 
     useEffect(() => {
         ScrollReveal().reveal('.front-service', {
-            duration:3000,
+            duration:2000,
             origin: 'top',
             distance: '-100px'
         })
         ScrollReveal().reveal('.back-service',{
-            duration:3000,
+            duration:2000,
             origin: 'top',
             distance: '-100px',
-            delay:3200
+            delay:2200
 
         })
         ScrollReveal().reveal('.responsive-service',{
-            duration:3000,
+            duration:2000,
             origin: 'top',
             distance: '-100px',
-            delay:3500
+            delay:2500
 
         })
     })

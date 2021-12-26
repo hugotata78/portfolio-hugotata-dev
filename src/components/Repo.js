@@ -5,7 +5,7 @@ const Repo = () => {
 
     useEffect(() => {
         ScrollReveal().reveal('.repo', {
-            duration: 3000,
+            duration: 2000,
             origin: 'top',
             distance: '-100px'
         })

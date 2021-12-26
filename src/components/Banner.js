@@ -6,12 +6,12 @@ const Banner = () => {
 
     useEffect(() => {
         ScrollReveal().reveal('.title-one', {
-            duration: 3000,
+            duration: 2000,
             origin: 'right',
             distance: '-150px'
         })
         ScrollReveal().reveal('.title-two',{
-            duration: 3000,
+            duration: 2000,
             origin: 'top',
             distance: '-100px',
 

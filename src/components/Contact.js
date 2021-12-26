@@ -80,9 +80,10 @@ const Contact = () => {
         }
     }
 
+
     useEffect(() => {
         ScrollReveal().reveal('.contact', {
-            duration: 3000,
+            duration: 2000,
             origin: 'top',
             distance: '-100px'
         })
