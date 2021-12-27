@@ -19,13 +19,13 @@ export const Home = () => {
     return (
         <div id='page-top'>
             <NavBar />
-            <Social />
             <Banner />
             <Abaut />
             <Services />
             <Projects />
             <Repo />
             <Contact />
+            <Social />
             <Footer />
         </div>
     )

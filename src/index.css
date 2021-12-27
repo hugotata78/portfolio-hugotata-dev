@@ -2207,6 +2207,18 @@ progress {
     background: #d95232;
   }
 
+  @media (max-width: 1024px) {
+    .social{
+      position: static;
+    }
+    .social ul{
+      display: flex;
+      justify-content: center;
+      margin: 10px auto;
+      width: 100%;
+    }
+  }
+
   .span-cursor{
     animation: machine 3s 1;
     transition: all 3ms;
