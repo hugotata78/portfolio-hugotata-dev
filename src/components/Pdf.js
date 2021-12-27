@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react'
-import pdf from '../docs/CV-HUGO-TATARINOFF.pdf'
+// import pdf from '../docs/CV-HUGO-TATARINOFF.pdf'
+// import { PDFReader } from 'react-read-pdf'
+import docPdf from '../img/CV-HUGO-TATARINOFF.pdf'
 
 const Pdf = () => {
 
@@ -9,19 +11,21 @@ const Pdf = () => {
             window.close();
         }
     })
+
+    console.log(docPdf)
     return (
         <div className='pdf'>
+
+            
             <object
-                data={pdf}
+                data={docPdf}
                 type='application/pdf'
-                width="100%"
-                height="100%"
             >
                 <br />
-                    <a href={pdf} id="enlaceDescargarPdf"
-                    download={pdf}
+                    <a href={docPdf} id="enlaceDescargarPdf"
+                    download={docPdf}
                     >No puedes visualizar el CV, da click aquí para descargarlo</a>
-            </object>
+            </object> 
         </div>
     )
 }
