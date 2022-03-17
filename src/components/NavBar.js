@@ -1,12 +1,12 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import logo from '../img/logo.svg'
-
+import { useTranslation } from 'react-i18next'
 
 
 const NavBar = () => {
 
     const [bgNavbar, setBgNavbar] = useState('')
-    
+    const [t, i18n] = useTranslation(['navbar'])
     const updateBgColor = useCallback(() => {
         if (window.scrollY > 50) {
             setBgNavbar('navbar-shrink')
@@ -18,6 +18,8 @@ const NavBar = () => {
     useEffect(() => {
         window.addEventListener('scroll', updateBgColor)
     })
+
+    console.log(t('about'))
 
     return (
         <nav className={`navbar navbar-expand-lg navbar-light ${bgNavbar} fixed-top py-3`} id="mainNav">
