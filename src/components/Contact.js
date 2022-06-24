@@ -20,6 +20,10 @@ const Contact = () => {
     const [errorMessage,setErrorMessage] = useState('d-none')
     const [emailSuccess,setEmailSuccess] = useState('d-none')
     const [emailError,setEmailError] = useState('d-none')
+    const service_id = process.env.REACT_APP_SERVICE_ID
+    console.log(service_id)
+    const user_id=process.env.REACT_APP_USER_ID
+    const template_id=process.env.REACT_APP_TEMPLATE_ID
     // const [errors,setErros] = useState({
     //     emptyName: 'd-none',
     //     emptyEmail:'d-none',
@@ -56,9 +60,9 @@ const Contact = () => {
                 setErrorMessage('d-block')
             }
 
-            console.log(data)
+            
         } else {
-            emailjs.sendForm("service_p9p1kt4", "template_i91cbxu", e.target, "user_uh0khwo3xqSadotU9Xlag")
+            emailjs.sendForm(service_id, template_id, e.target,user_id)
                 .then((result) => {
                     console.log(result.text);
                     // setEmailSuccess('d-block')
