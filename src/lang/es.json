@@ -1,0 +1,57 @@
+{
+    
+    "nav.about": "Acerca de mi",
+    "nav.services": "Servicios",
+    "nav.projects": "Proyectos",
+    "nav.contact": "Contacto",
+    "nav.english": "Inglés",
+    "nav.spanish": "Español",
+
+    "ban.title":"Desarrollador Full Stack.",
+    "ban.description":"Hola! Mi nombre es Hugo Tatarinoff y soy Desarrollador full Stack, me considero una persona sencilla, eso si inovadora y creativa, apasionado por la Programación y Nuevas Técnologias",
+    "ban.btn":"Saber Más",
+
+    "about.title":"Innovación y Creatividad!",
+    "about.description":"En dos palabras puedo resumir mi perfil profesional! A lo que puedo sumar que soy un apasionado por lo que hago. En mi vas a encontrar una persona predispuesta, proactiva, que no le teme a encarar nuevos desafíos y con la constante necesidad en seguir apendiendo. Si deseas interiorizarte un poco más acerca de mi perfil profesional y de las tecnologías que manejo como desarrollador, te invito a descargar mi Hoja de Vida en el link que se encuentra más abajo!",
+    "about.btn":"Descargar CV",
+
+    "services.title":"Mis Servicios",
+    "services.frontTitle":"Desarrollador Front-End",
+    "services.frontDescription":"Desarrollo de aplicaciones y sitios web del lado del Cliente.",
+    "services.backTitle":"Desarrollador Back-End",
+    "services.backDescription":"Desarrollo de aplicaciones del lado del servidor, como así también configuración y conexión a bases de datos.",
+    "services.responsiveTitle":"Diseño responsive",
+    "services.responsiveDescription":"Creación de aplicaciones adaptables a cualquier tipo de dispositivo!",
+
+    "projects.title":"Mis proyectos",
+    "projects.portfolioTitle":"Mi Portfolio personal",
+    "projects.portfolioLink":"Ver aplicación",
+    "projects.storeTitle":"Tienda online",
+    "projects.storeLink":"Ver aplicación",
+    "projects.covidTitle":"Aplicación Covid-19",
+    "projects.covidLink":"Ver aplicación",
+    "projects.weatherTitle":"Aplicación del clima",
+    "projects.weatherLink":"Ver aplicación",
+
+    "repo.title":"Para ver repositorios en Github",
+    "repo.btn":"Acceder aquí",
+
+    "contact.title":"No dudes en contactarme!",
+    "contact.message":"¿Listo para comenzar tu próximo proyecto? Enviame un mensaje y me pondré en contacto contigo lo antes posible.",
+    "contact.labelName":"Nombre Completo",
+    "contact.errorName":"*Se requiere un nombre.",
+    "contact.labelEmail":"Dirección de Email",
+    "contact.errorEmail":"*Se requiere un Email.",
+    "contact.labelPhone":"Numero de Teléfono",
+    "contact.errorPhone":"*Se requiere un número de teléfono.",
+    "contact.messageLable":"Mensaje",
+    "contact.messageError":"*Se requiere un mensaje.",
+    "contact.btn":"Enviar",
+
+    "success.title":"Buen trabajo!",
+    "success.message":"El email se envió exitosamente!",
+
+    "error.title":"Ups..!",
+    "error.message":"Parece que ha ocurrido un erro!"
+
+}

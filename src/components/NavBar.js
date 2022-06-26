@@ -1,25 +1,32 @@
-import React, { useCallback, useEffect, useState } from 'react'
+import React, { useCallback, useContext, useEffect, useState } from 'react'
 import logo from '../img/logo.svg'
-import { useTranslation } from 'react-i18next'
+import { FormattedMessage } from 'react-intl'
+import { DataContext } from '../context/DataProvider'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGlobe } from '@fortawesome/free-solid-svg-icons'
 
 
 const NavBar = () => {
 
+    const value = useContext(DataContext)
+    const [locale] = value.locale
+    const handleOnChangeEnglish = value.handleOnChangeEnglish
+    const handleOnChangeSpanish = value.handleOnChangeSpanish
+
     const [bgNavbar, setBgNavbar] = useState('')
-    const [t, i18n] = useTranslation(['navbar'])
     const updateBgColor = useCallback(() => {
         if (window.scrollY > 50) {
             setBgNavbar('navbar-shrink')
         } else {
             setBgNavbar('')
         }
-    },[setBgNavbar]
-)
+    }, [setBgNavbar]
+    )
     useEffect(() => {
         window.addEventListener('scroll', updateBgColor)
     })
 
-    console.log(t('about'))
+
 
     return (
         <nav className={`navbar navbar-expand-lg navbar-light ${bgNavbar} fixed-top py-3`} id="mainNav">
@@ -28,21 +35,63 @@ const NavBar = () => {
                 <button className="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span className="navbar-toggler-icon"></span></button>
                 <div className="collapse navbar-collapse" id="navbarResponsive">
                     <ul className="navbar-nav ms-auto my-2 my-lg-0">
-                        <li className="nav-item"><a className="nav-link" href="#about">Acerca de Mi</a></li>
-                        <li className="nav-item"><a className="nav-link" href="#services">Servicios</a></li>
-                        <li className="nav-item"><a className="nav-link" href="#portfolio">Proyectos</a></li>
-                        <li className="nav-item"><a className="nav-link" href="#contact">Contacto</a></li>
-                        {/* <li className="nav-item dropdown">
+                        <li className="nav-item">
+                            <a className="nav-link" href="#about">
+                                <FormattedMessage
+                                    id="nav.about"
+                                    defaultMessage="Acerca de mi"
+                                />
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#services">
+                                <FormattedMessage
+                                    id="nav.services"
+                                    defaultMessage="Servicios"
+                                />
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#portfolio">
+                                <FormattedMessage
+                                    id="nav.projects"
+                                    defaultMessage="Proyectos"
+                                />
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#contact">
+                                <FormattedMessage
+                                    id="nav.contact"
+                                    defaultMessage="Contacto"
+                                />
+                            </a>
+                        </li>
+                        <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <span><FontAwesomeIcon icon={faGlobe} /> </span>
-                                {lang}
+                                {locale}
                             </a>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a className="dropdown-item" href="/" onClick={handleOnClickEs}>{t('spanish')}</a></li>
+                                <li>
+                                    <a className="dropdown-item" href="/" onClick={handleOnChangeEnglish}>
+                                        <FormattedMessage
+                                            id="nav.english"
+                                            defaultMessage="Inglés"
+                                        />
+                                    </a>
+                                </li>
                                 <li><hr className="dropdown-divider" /></li>
-                                <li><a className="dropdown-item" href="/" onClick={handleOnClickEn}>{t('english')}</a></li>
+                                <li>
+                                    <a className="dropdown-item" href="/" onClick={handleOnChangeSpanish}>
+                                        <FormattedMessage
+                                            id="nav.spanish"
+                                            defaultMessage="Español"
+                                        />
+                                    </a>
+                                </li>
                             </ul>
-                        </li> */}
+                        </li>
                     </ul>
                 </div>
             </div>

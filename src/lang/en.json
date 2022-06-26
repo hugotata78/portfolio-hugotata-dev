@@ -1,0 +1,58 @@
+{
+    
+    "nav.about": "About me",
+    "nav.services": "Services",
+    "nav.projects": "Projects",
+    "nav.contact": "Contact",
+    "nav.english": "English",
+    "nav.spanish": "Spanish",
+
+    "ban.title":"Full Stack Developer.",
+    "ban.description":"Hello! My name is Hugo Tatarinoff and I am a Full Stack Developer, I consider myself a simple person, albeit innovative and creative, passionate about Programming and New Technologies",
+    "ban.btn":"Know more",
+
+    "about.title":"Innovation and creativity!",
+    "about.description":"In two words I can summarize my professional profile! To which I can add that I am passionate about what I do. In me you will find a predisposed, proactive person, who is not afraid to face new challenges and with the constant need to continue learning. If you want to learn a little more about my professional profile and the technologies I use as a developer, I invite you to download my CV in the link below!",
+    "about.btn":"Download resume",
+
+    "services.title":"My services",
+    "services.frontTitle":"Front End Developer",
+    "services.frontDescription":"Development of applications and websites on the Client side.",
+    "services.backTitle":"Back End Developer",
+    "services.backDescription":"Server-side application development, as well as configuration and connection to databases.",
+    "services.responsiveTitle":"Responsive designer",
+    "services.responsiveDescription":"Creation of applications adaptable to any type of device!",
+
+    "projects.title":"My projects",
+    "projects.portfolioTitle":"My Personal Portfolio",
+    "projects.portfolioLink":"See application",
+    "projects.storeTitle":"Online store",
+    "projects.storeLink":"See application",
+    "projects.covidTitle":"Covid-19 application",
+    "projects.covidLink":"See application",
+    "projects.weatherTitle":"weather app",
+    "projects.weatherLink":"See application",
+
+    "repo.title":"To view repositories on Github.",
+    "repo.btn":"Access here",
+
+    "contact.title":"Do not hesitate to contact me!",
+    "contact.message":"Ready to start your next project? Send me a message and I will contact you as soon as possible.",
+    "contact.labelName":"Full name",
+    "contact.errorName":"*A name is required.",
+    "contact.labelEmail":"Email address",
+    "contact.errorEmail":"*An Email is required.",
+    "contact.labelPhone":"Phone number",
+    "contact.errorPhone":"*A phone number is required.",
+    "contact.messageLable":"Message",
+    "contact.messageError":"*A message is required.",
+    "contact.btn":"Send",
+
+    "success.title":"Good job!",
+    "success.message":"The email was sent successfully!",
+
+    "error.title":"Ups..!",
+    "error.message":"It seems that an error has occurred!"
+
+
+}
