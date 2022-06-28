@@ -6,6 +6,7 @@
     "nav.contact": "Contacto",
     "nav.english": "Inglés",
     "nav.spanish": "Español",
+    "nav.portuguese":"Portugués",
 
     "ban.title":"Desarrollador Full Stack.",
     "ban.description":"Hola! Mi nombre es Hugo Tatarinoff y soy Desarrollador full Stack, me considero una persona sencilla, eso si inovadora y creativa, apasionado por la Programación y Nuevas Técnologias",
@@ -41,8 +42,8 @@
     "contact.labelName":"Nombre Completo",
     "contact.errorName":"*Se requiere un nombre.",
     "contact.labelEmail":"Dirección de Email",
-    "contact.errorEmail":"*Se requiere un Email.",
-    "contact.labelPhone":"Numero de Teléfono",
+    "contact.errorEmail":"*Se requiere un email.",
+    "contact.labelPhone":"Número de Teléfono",
     "contact.errorPhone":"*Se requiere un número de teléfono.",
     "contact.messageLable":"Mensaje",
     "contact.messageError":"*Se requiere un mensaje.",

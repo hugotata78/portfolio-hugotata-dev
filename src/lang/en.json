@@ -6,6 +6,7 @@
     "nav.contact": "Contact",
     "nav.english": "English",
     "nav.spanish": "Spanish",
+    "nav.portuguese":"Portuguese",
 
     "ban.title":"Full Stack Developer.",
     "ban.description":"Hello! My name is Hugo Tatarinoff and I am a Full Stack Developer, I consider myself a simple person, albeit innovative and creative, passionate about Programming and New Technologies",
@@ -41,7 +42,7 @@
     "contact.labelName":"Full name",
     "contact.errorName":"*A name is required.",
     "contact.labelEmail":"Email address",
-    "contact.errorEmail":"*An Email is required.",
+    "contact.errorEmail":"*An email is required.",
     "contact.labelPhone":"Phone number",
     "contact.errorPhone":"*A phone number is required.",
     "contact.messageLable":"Message",

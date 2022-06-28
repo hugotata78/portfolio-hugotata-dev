@@ -2,6 +2,7 @@ import React, { createContext, useEffect, useState } from 'react'
 import { IntlProvider } from 'react-intl'
 import msgEnglish from '../lang/en.json'
 import msgSpanish from '../lang/es.json'
+import msgPortuguese from '../lang/pt.json'
 
 const DataContext = createContext()
 
@@ -27,15 +28,24 @@ const DataProvider = (props) => {
         localStorage.setItem('lang', 'es-US');
     }
 
+    const handleOnChangePortuguese = (e) => {
+        e.preventDefault()
+        setMessages(msgPortuguese);
+        setLocale('pt-BR');
+        localStorage.setItem('lang', 'pt-BR');
+    }
+
 
     useEffect(() => {
         const lang = localStorage.getItem('lang')
         if (lang) {
             setDefaultLocale(lang)
-            if (lang === 'es-US') {
+            if (lang.split('-')[0] === 'es') {
                 setDefaultMessage(msgSpanish)
-            } else if (lang === 'en-US') {
+            } else if (lang.split('-')[0] === 'en') {
                 setDefaultMessage(msgEnglish)
+            }else if (lang.split('-')[0] === 'pt') {
+                setDefaultMessage(msgPortuguese)
             } else {
                 setDefaultMessage(msgSpanish)
             }
@@ -52,7 +62,8 @@ const DataProvider = (props) => {
         locale: [locale],
         messages:[messages],
         handleOnChangeEnglish: handleOnChangeEnglish,
-        handleOnChangeSpanish: handleOnChangeSpanish
+        handleOnChangeSpanish: handleOnChangeSpanish,
+        handleOnChangePortuguese:handleOnChangePortuguese
     }
 
     return (

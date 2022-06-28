@@ -12,6 +12,7 @@ const NavBar = () => {
     const [locale] = value.locale
     const handleOnChangeEnglish = value.handleOnChangeEnglish
     const handleOnChangeSpanish = value.handleOnChangeSpanish
+    const handleOnChangePortuguese = value.handleOnChangePortuguese
 
     const [bgNavbar, setBgNavbar] = useState('')
     const updateBgColor = useCallback(() => {
@@ -87,6 +88,15 @@ const NavBar = () => {
                                         <FormattedMessage
                                             id="nav.spanish"
                                             defaultMessage="Español"
+                                        />
+                                    </a>
+                                </li>
+                                <li><hr className="dropdown-divider" /></li>
+                                <li>
+                                    <a className="dropdown-item" href="/" onClick={handleOnChangePortuguese}>
+                                        <FormattedMessage
+                                            id="nav.portuguese"
+                                            defaultMessage="Portugués"
                                         />
                                     </a>
                                 </li>
